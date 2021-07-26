@@ -18,6 +18,10 @@ def home(path):
 def hello():
     return str(random.randint(0, 100))
 
+# Send 404 errors to index and let front end handle routing
+@app.errorhandler(404)   
+def not_found(e):  
+    return send_from_directory('../frontend/public', 'index.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -30,7 +30,11 @@ To set up the ngnix server:
 - `sudo apt-get install nginx` to get ngnix
 - `sudo rm /etc/nginx/sites-enabled/default` to remove default site
 - `sudo chown pi /etc/nginx/sites-available/` so you can add files
-- `nano /etc/nginx/sites-available/easy.nginx` to create a nginx file with the following config:
+- `nano /etc/nginx/sites-available/easy.nginx` to create a nginx file with the below config
+- `sudo ln -s /etc/nginx/sites-available/easy.nginx /etc/nginx/sites-enabled/easy.nginx` to symlink them
+- `sudo systemctl reload nginx` to restart the server
+
+**easy.nginx**
 
 ```
 server {
