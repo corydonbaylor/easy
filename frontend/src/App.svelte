@@ -1,12 +1,25 @@
 <script>
-  let rand = -1;
+  import page from "page";
 
-  function getRand() {
-    fetch("./rand")
-      .then(d => d.text())
-      .then(d => (rand = d));
-  }
+  import Home from "./pages/Home.svelte";
+  import About from "./pages/About.svelte";
+
+  // set default component
+  let current = Home;
+
+  // Map routes to page. If a route is hit the current
+  // reference is set to the route's component
+  page("/", () => (current = Home));
+  page("/about", () => (current = About));
+  // activate router
+  page.start();
 </script>
 
-<h1>Your number is {rand}!</h1>
-<button on:click={getRand}>Get a random number</button>
+<main>
+  <nav>
+    <a href="/">home</a>
+    <a href="/about">about</a>
+  </nav>
+
+  <svelte:component this={current} />
+</main>
