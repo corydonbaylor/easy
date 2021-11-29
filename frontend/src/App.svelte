@@ -29,3 +29,15 @@
 
   <svelte:component this={current} />
 </main>
+
+<style>
+  main {
+    max-width: 720px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 50px;
+  }
+  :global(body) {
+    background-color: #f5e29c26;
+  }
+</style>
