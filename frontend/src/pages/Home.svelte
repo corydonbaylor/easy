@@ -13,7 +13,7 @@
       <p>Creamy sweet potatoes topped with pecans and brown sugar</p>
     </li>
     <li>
-      <a>Roasted Carrots (45 mins) </a><br />
+      <a href="/roasted_carrots">Roasted Carrots (45 mins) </a><br />
       <p>Roasted carrots tossed in olive oil, herbs, and lemon juice</p>
     </li>
   </ul>

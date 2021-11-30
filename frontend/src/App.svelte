@@ -7,6 +7,8 @@
   import BeefTagine from "./pages/mains/BeefTagine.svelte";
   import HomemadePasta from "./pages/mains/HomemadePasta.svelte";
 
+  import RoastedCarrots from "./pages/sides/RoastedCarrots.svelte";
+
   // set default component
   let current = Home;
 
@@ -17,6 +19,8 @@
   page("/chicken_pan", () => (current = ChickenPan));
   page("/beef_tagine", () => (current = BeefTagine));
   page("/homemade_pasta", () => (current = HomemadePasta));
+
+  page("/roasted_carrots", () => (current = RoastedCarrots));
 
   // activate router
   page.start();
