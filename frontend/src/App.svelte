@@ -1,13 +1,19 @@
 <script>
   import page from "page";
 
+  // importing all the possible routes
   import Home from "./pages/Home.svelte";
-  import BraisedBeef from "./pages/mains/BraisedBeef.svelte";
-  import ChickenPan from "./pages/mains/ChickenPan.svelte";
-  import BeefTagine from "./pages/mains/BeefTagine.svelte";
-  import HomemadePasta from "./pages/mains/HomemadePasta.svelte";
 
-  import RoastedCarrots from "./pages/sides/RoastedCarrots.svelte";
+  // family receipes
+  import BraisedBeef from "./pages/family/BraisedBeef.svelte";
+  import ChickenPan from "./pages/family/ChickenPan.svelte";
+  import SausageBalls from "./pages/family/SausageBalls.svelte";
+
+  // french receipes
+  import RoastedCarrots from "./pages/french/RoastedCarrots.svelte";
+
+  // italian
+  import HomemadePasta from "./pages/italian/HomemadePasta.svelte";
 
   // set default component
   let current = Home;
@@ -15,12 +21,17 @@
   // Map routes to page. If a route is hit the current
   // reference is set to the route's component
   page("/", () => (current = Home));
+
+  // family routes
   page("/braised_beef", () => (current = BraisedBeef));
   page("/chicken_pan", () => (current = ChickenPan));
-  page("/beef_tagine", () => (current = BeefTagine));
-  page("/homemade_pasta", () => (current = HomemadePasta));
+  page("/sausage_balls", () => (current = SausageBalls));
 
+  // french routes
   page("/roasted_carrots", () => (current = RoastedCarrots));
+
+  // italian routes
+  page("/homemade_pasta", () => (current = HomemadePasta));
 
   // activate router
   page.start();
