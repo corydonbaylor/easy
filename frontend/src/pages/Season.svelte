@@ -1,7 +1,14 @@
 <script>
-  location = async function getLocation() {
-    await fetch("./location");
-  };
+  import { onMount } from "svelte";
+
+  let location = [];
+  let poop = "";
+
+  onMount(async () => {
+    const res = await fetch(`./location`);
+    location = await res.json();
+    poop = JSON.stringify(location);
+  });
 </script>
 
-<div>test</div>
+<div>{poop}</div>
