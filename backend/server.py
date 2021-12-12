@@ -27,7 +27,7 @@ def get_country():
     user_ip = headers_list[0] if headers_list else request.remote_addr
 
     try:
-        response = requests.get("http://ip-api.com/json/{}".format(user_ip))
+        response = request.get("http://ip-api.com/json/{}".format(user_ip))
         js = response.json()
         country = js['countryCode']
         return country
