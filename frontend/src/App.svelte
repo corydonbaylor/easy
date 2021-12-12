@@ -45,7 +45,7 @@
   // Map routes to page. If a route is hit the current
   // reference is set to the route's component
   page("/", () => (current = Home));
-  page("/season", () => (current = BraisedBeef));
+  page("/season", () => (current = Season));
 
   // family routes
   page("/braised_beef", () => (current = BraisedBeef));
