@@ -1,5 +1,19 @@
 <script>
+  // this function ensures that when some navigates to a new page,
+  // the new page loads at the top -- otherwise the y position,
+  // will be wherever the last y position was
+  history.pushState = new Proxy(history.pushState, {
+    apply(target, thisArg, argumentsList) {
+      // scrollTo(0,0) <-- order of operation can mather (ty, @t-lock)
+      Reflect.apply(target, thisArg, argumentsList);
+      scrollTo(0, 0);
+    },
+  });
+  // importing packages
   import page from "page";
+
+  // importing components
+  import Navbar from "./pages/components/Navbar.svelte";
 
   // importing all the possible routes
   import Home from "./pages/Home.svelte";
@@ -55,10 +69,7 @@
 </script>
 
 <main>
-  <nav>
-    <a href="/">Home</a>
-  </nav>
-
+  <Navbar />
   <svelte:component this={current} />
 </main>
 

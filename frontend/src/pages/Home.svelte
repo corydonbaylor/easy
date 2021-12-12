@@ -11,10 +11,7 @@
   let current = "family";
 </script>
 
-<p>
-  Welcome to the cleanest recipe website on the web. No life story, just what
-  you need and how to prepare it.
-</p>
+<h2>Recipes</h2>
 
 <div class="menus">
   <div
@@ -88,5 +85,9 @@
 
   .selected {
     text-decoration: underline;
+  }
+
+  h2 {
+    text-align: center;
   }
 </style>
