@@ -1,11 +1,5 @@
 <script>
-  import { onMount } from "svelte";
-
-  location = [];
-  onMount(async () => {
-    const res = await fetch(`./location`);
-    location = await res.json();
-  });
+  location = fetch("./location");
 </script>
 
 <div>test</div>
