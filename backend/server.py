@@ -25,15 +25,14 @@ def get_country():
     # we need to get the users ip address rather than the proxy ip address
     headers_list = request.headers.getlist("X-Forwarded-For")
     user_ip = headers_list[0] if headers_list else request.remote_addr
-    api = "http://ip-api.com/json/"
-    ip = str(user_ip)
-    test = api + ip
 
-    response = requests.get(test)
-    js = response.json()
-    country = js['countryCode']
-    return country
-
+    try:
+        response = requests.get("http://ip-api.com/json/{}".format(user_ip))
+        js = response.json()
+        country = js['countryCode']
+        return country
+    except Exception as e:
+        return str(e)
 
 # Send 404 errors to index and let front end handle routing
 @app.errorhandler(404)   
