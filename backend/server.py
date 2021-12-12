@@ -28,14 +28,12 @@ def get_country():
     api = "http://ip-api.com/json/"
     ip = str(user_ip)
     test = api + ip
-    
-    try:
-        response = requests.get(test)
-        js = response.json()
-        country = js['countryCode']
-        return country
-    except Exception as e:
-        return str(test)
+
+    response = requests.get(test)
+    js = response.json()
+    country = js['countryCode']
+    return country
+
 
 # Send 404 errors to index and let front end handle routing
 @app.errorhandler(404)   
