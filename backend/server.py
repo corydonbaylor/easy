@@ -22,11 +22,15 @@ def hello():
 @app.route("/location")
 def get_country():
 
+    # we need to get the users ip address rather than the proxy ip address
     headers_list = request.headers.getlist("X-Forwarded-For")
     user_ip = headers_list[0] if headers_list else request.remote_addr
 
     try:
-        response = requests.get("http://ip-api.com/json/{}".format(user_ip))
+        api = "http://ip-api.com/json/"
+        ip = str(user_ip)
+        test = api + ip
+        response = requests.get(test)
         js = response.json()
         country = js['countryCode']
         return country
