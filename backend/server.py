@@ -50,7 +50,12 @@ def get_country():
         return json.dumps(diction)
 
     except Exception as e:
-        return str(e)
+        diction = {
+            "state": "Virgina",
+            "month": 1,
+            "period": "early"
+        }
+        return json.dumps(diction)
 
 # Send 404 errors to index and let front end handle routing
 @app.errorhandler(404)   
