@@ -21,14 +21,13 @@ def hello():
 
 @app.route("/location")
 def get_country():
-    ip_address = request.remote_addr
     try:
-        response = requests.get("http://ip-api.com/json/")
+        response = requests.get("http://ip-api.com/json/{}".format(request.remote_addr))
         js = response.json()
         country = js['countryCode']
         return country
     except Exception as e:
-        return ip_address
+        return str(request.remote_addr)
 
 # Send 404 errors to index and let front end handle routing
 @app.errorhandler(404)   
