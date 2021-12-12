@@ -1,5 +1,7 @@
 <script>
-  location = fetch("./location");
+  location = async function getLocation() {
+    await fetch("./location");
+  };
 </script>
 
 <div>test</div>
