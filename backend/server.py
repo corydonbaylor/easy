@@ -2,6 +2,8 @@ from flask import Flask, send_from_directory
 from flask import request
 import random
 
+import requests
+
 app = Flask(__name__)
 
 # Path for our main Svelte page
@@ -27,7 +29,7 @@ def get_country():
     user_ip = headers_list[0] if headers_list else request.remote_addr
 
     try:
-        response = request.get("http://ip-api.com/json/{}".format(user_ip))
+        response = requests.get("http://ip-api.com/json/{}".format(user_ip))
         js = response.json()
         country = js['countryCode']
         return country
