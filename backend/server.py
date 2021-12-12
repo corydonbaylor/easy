@@ -23,7 +23,7 @@ def hello():
 def get_country():
     ip_address = request.remote_addr
     try:
-        response = requests.get("http://ip-api.com/json/{}".format(ip_address))
+        response = requests.get("http://ip-api.com/json/")
         js = response.json()
         country = js['countryCode']
         return country
