@@ -1,22 +1,13 @@
 <div class="sections">
-  <h3>Sides</h3>
+  <h3>Pastas</h3>
   <ul>
     <li>
       <a href="/homemade_pasta">Homemade Pasta (1 hour) </a><br />
-      <p>Roasted carrots tossed in olive oil, herbs, and lemon juice</p>
+      <p>Handmade eggy pasta served with walnut pesto</p>
     </li>
-  </ul>
-</div>
-<div class="sections">
-  <h3>Mains</h3>
-  <ul>
     <li>
-      <a href="/braised_beef">Braised Beef with Sunday Gravy (4-5 hours)</a><br
-      />
-      <p>
-        Slow cooked beef served over mashed potatoes and topped with pickled
-        onions
-      </p>
+      <a href="/cacio_pepe">Cacio e Pepe (1 hour) </a><br />
+      <p>Handmade pasta with a sharp parmesan reggiano sauce</p>
     </li>
   </ul>
 </div>

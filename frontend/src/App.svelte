@@ -32,6 +32,7 @@
 
   // italian
   import HomemadePasta from "./pages/italian/HomemadePasta.svelte";
+  import CacioPepe from "./pages/italian/CacioPepe.svelte";
 
   // Central European
   import Paprika from "./pages/central/Paprika.svelte";
@@ -60,7 +61,7 @@
 
   // italian routes
   page("/homemade_pasta", () => (current = HomemadePasta));
-
+  page("/cacio_pepe", () => (current = CacioPepe));
   // central routes
   page("/chicken_paprika", () => (current = Paprika));
   page("/korozott", () => (current = Korozott));
