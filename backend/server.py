@@ -48,9 +48,9 @@ def get_produce():
 
     # then if its the early or late part of the year
     if dt.day > 15:
-        period = "late"
+        period = "Late"
     else:
-        period = "early"
+        period = "Early"
 
     #############################
     #### Creating the payload ###
@@ -62,19 +62,16 @@ def get_produce():
     df = df[df.period == period]
     df = df[df.state == state]
 
-    # produce from table into a list
-    produce = df["produce"].tolist()
-
     # finally we are going to create a dictionary
-    diction = {
+    payload = {
         "state": state,
-        "month": dt.month,
         "period": period,
-        "produce": produce
+        "month": df["month_name"].tolist()[0],
+        "produce": df["produce"].tolist()
     }
 
     # and return it as a json
-    return json.dumps(diction)
+    return json.dumps(payload)
 
 # Send 404 errors to index and let front end handle routing
 @app.errorhandler(404)   
