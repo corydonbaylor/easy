@@ -3,6 +3,7 @@ from flask import request
 import requests
 import datetime
 import json
+import pandas as pd
 
 app = Flask(__name__)
 
@@ -19,43 +20,61 @@ def home(path):
 # we need to get someones location and the timeframe in order to filter 
 # down to the produce that is in season for them.
 @app.route("/location")
-def get_country():
+def get_produce():
 
-    # we need to get the users ip address rather than the proxy ip address
-    headers_list = request.headers.getlist("X-Forwarded-For")
-    user_ip = headers_list[0] if headers_list else request.remote_addr
+    #################################################
+    #### Getting parameters for filtering out df ####
+    #################################################
 
-    # we then query this api to get their state
+    # Querying this api to get state based on their ip address
     try:
+        # we need to get the users ip address rather than the proxy ip address
+        headers_list = request.headers.getlist("X-Forwarded-For")
+        user_ip = headers_list[0] if headers_list else request.remote_addr
+
         # here is how we get the state
         response = requests.get("http://ip-api.com/json/{}".format(user_ip))
         js = response.json()
         state = js['regionName']
 
-        # next we get the time of year
-        dt = datetime.datetime.today()
-        if dt.day > 15:
-            period = "late"
-        else:
-            period = "early"
-
-        # finally we are going to create a dictionary
-        diction = {
-            "state": state,
-            "month": dt.month,
-            "period": period
-        }
-
-        # and return it as a json
-        return json.dumps(diction)
-
     except Exception as e:
-        diction = {
-            "state": "Virgina",
-            "month": 1,
-            "period": "early"
-        }
-        return json.dumps(diction)
+
+        # when we are running locally, we wont have a valid ip address
+        # so we will say that our state is Virginia for now
+        state = "Virginia"
+
+    # next we get the time of year
+    dt = datetime.datetime.today()
+
+    # then if its the early or late part of the year
+    if dt.day > 15:
+        period = "late"
+    else:
+        period = "early"
+
+    #############################
+    #### Creating the payload ###
+    #############################
+
+    # filtering down our csv to the right state, period and month
+    df = pd.read_csv("seasons.csv")
+    df = df[df.month == dt.month]
+    df = df[df.period == period]
+    df = df[df.state == state]
+
+    # produce from table into a list
+    produce = df["produce"].tolist()
+
+    # finally we are going to create a dictionary
+    diction = {
+        "state": state,
+        "month": dt.month,
+        "period": period,
+        "produce": produce
+    }
+
+    # and return it as a json
+    return json.dumps(diction)
 
 # Send 404 errors to index and let front end handle routing
 @app.errorhandler(404)   
