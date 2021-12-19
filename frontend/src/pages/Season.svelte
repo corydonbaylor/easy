@@ -24,7 +24,7 @@
 
 <h3>In {state} during {period} {month}, the following produce is in season:</h3>
 <ul>
-  {#each produce}
-    <li>{produce}</li>
+  {#each produce as item}
+    <li>{item}</li>
   {/each}
 </ul>
