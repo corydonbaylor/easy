@@ -4,11 +4,9 @@ import requests
 import datetime
 import json
 import pandas as pd
-from flask_cors import CORS
 
 
 app = Flask(__name__)
-CORS(app)
 
 # Path for our main Svelte page
 @app.route("/")
