@@ -32,6 +32,13 @@
       ><br />
       <p>Seared pan chicken served with a buttery white wine pan sauce</p>
     </li>
+    <li>
+      <a href="/sweet_potato_soup">Sweet Potato Soup (30 minutes)</a><br />
+      <p>
+        A pureed sweet potato and carrot soup with warm curry powder notes.
+        Perfect for a cold winter day.
+      </p>
+    </li>
   </ul>
 </div>
 <div class="sections">

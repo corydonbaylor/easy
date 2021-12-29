@@ -26,9 +26,13 @@
   import SweetRolls from "./pages/family/SweetRolls.svelte";
   import Biscuits from "./pages/family/Biscuits.svelte";
   import Grits from "./pages/family/Grits.svelte";
+  import SweetPotatoSoup from "./pages/family/SweetPotatoSoup.svelte";
 
   // french receipes
   import RoastedCarrots from "./pages/french/RoastedCarrots.svelte";
+  import CoqAuVin from "./pages/french/CoqAuVin.svelte";
+  import BeefBourguignon from "./pages/french/BeefBourguignon.svelte";
+  import Baguette from "./pages/french/Baguette.svelte";
 
   // italian
   import HomemadePasta from "./pages/italian/HomemadePasta.svelte";
@@ -55,13 +59,18 @@
   page("/sweet_rolls", () => (current = SweetRolls));
   page("/biscuits", () => (current = Biscuits));
   page("/grits", () => (current = Grits));
+  page("/sweet_potato_soup", () => (current = SweetPotatoSoup));
 
   // french routes
   page("/roasted_carrots", () => (current = RoastedCarrots));
+  page("/coq_au_vin", () => (current = CoqAuVin));
+  page("/beef_bourguignon", () => (current = BeefBourguignon));
+  page("/baguette", () => (current = Baguette));
 
   // italian routes
   page("/homemade_pasta", () => (current = HomemadePasta));
   page("/cacio_pepe", () => (current = CacioPepe));
+
   // central routes
   page("/chicken_paprika", () => (current = Paprika));
   page("/korozott", () => (current = Korozott));
