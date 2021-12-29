@@ -18,6 +18,7 @@
   // importing all the possible routes
   import Home from "./pages/Home.svelte";
   import Season from "./pages/Season.svelte";
+  import Test from "./pages/Test.svelte";
 
   // family receipes
   import BraisedBeef from "./pages/family/BraisedBeef.svelte";
@@ -55,6 +56,7 @@
   // reference is set to the route's component
   page("/", () => (current = Home));
   page("/season", () => (current = Season));
+  page("/test", () => (current = Test));
 
   // family routes
   page("/braised_beef", () => (current = BraisedBeef));

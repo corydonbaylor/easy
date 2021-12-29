@@ -4,8 +4,11 @@ import requests
 import datetime
 import json
 import pandas as pd
+from flask_cors import CORS
+
 
 app = Flask(__name__)
+CORS(app)
 
 # Path for our main Svelte page
 @app.route("/")
@@ -66,9 +69,21 @@ def get_produce():
     payload = {
         "state": state,
         "period": period,
-        "month": df["month_name"].tolist()[0],
-        "produce": df["produce"].tolist()
+        "month": df["month_name"].tolist()[0]
     }
+
+    # for loops in svelte require a good format
+    name = df["produce"].tolist()
+    description = df["description"].tolist()
+
+    # now we want to create an object within our json
+    payload['produce'] = []
+
+    for i in range(0, len(name)):
+        payload['produce'].append({
+            'name': name[i],
+            'description': description[i]
+        })
 
     # and return it as a json
     return json.dumps(payload)

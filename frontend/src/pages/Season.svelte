@@ -7,6 +7,7 @@
   let period = "";
   let month = "";
   let produce = [];
+  let description = [];
 
   // the following will happen once the page finishes loading
   onMount(async () => {
@@ -19,6 +20,7 @@
     period = location.period;
     month = location.month;
     produce = location.produce;
+    description = location.description;
   });
 </script>
 
