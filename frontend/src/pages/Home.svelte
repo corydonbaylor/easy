@@ -4,6 +4,7 @@
   import French from "./french/French.svelte";
   import Central from "./central/Central.svelte";
   import Italian from "./italian/Italian.svelte";
+  import Other from "./other/Other.svelte";
 
   // depending on what the user selects, a different menu will show
   let menu = Family;
@@ -55,7 +56,7 @@
     Central European
   </div>
   <div
-    on:click={() => (menu = French)}
+    on:click={() => (menu = Other)}
     on:click={() => (current = "other")}
     class="menu {current === 'other' ? 'selected' : ''}"
   >

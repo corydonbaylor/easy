@@ -44,6 +44,10 @@
   import Makosguba from "./pages/central/Makosguba.svelte";
   import HungarianPea from "./pages/central/HungarianPea.svelte";
 
+  // Other
+  import Other from "./pages/other/Other.svelte";
+  import Rye from "./pages/other/Rye.svelte";
+
   // set default component
   let current = Home;
 
@@ -76,6 +80,10 @@
   page("/korozott", () => (current = Korozott));
   page("/makosguba", () => (current = Makosguba));
   page("/hungarian_pea", () => (current = HungarianPea));
+
+  // other routes
+  page("/rye_bread", () => (current = Rye));
+
   // activate router
   page.start();
 </script>
