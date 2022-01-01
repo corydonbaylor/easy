@@ -2907,8 +2907,9 @@ var app = (function () {
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
+    			attr_dev(h3, "class", "svelte-zp8gc6");
     			add_location(h3, file$8, 13, 2, 263);
-    			attr_dev(div, "class", "row svelte-zf9k9f");
+    			attr_dev(div, "class", "container svelte-zp8gc6");
     			add_location(div, file$8, 17, 2, 373);
     		},
 
@@ -2969,29 +2970,43 @@ var app = (function () {
 
     // (19:4) {#each data.produce as { name, description }}
     function create_each_block$1(ctx) {
-    	var div1, div0, t0_value = ctx.name + "", t0, t1, t2_value = ctx.description + "", t2, t3;
+    	var div1, div0, span0, t0_value = ctx.name + "", t0, t1, br, t2, span1, t3_value = ctx.description + "", t3, t4;
 
     	const block = {
     		c: function create() {
     			div1 = element("div");
     			div0 = element("div");
+    			span0 = element("span");
     			t0 = text(t0_value);
     			t1 = space();
-    			t2 = text(t2_value);
-    			t3 = space();
-    			attr_dev(div0, "class", "card svelte-zf9k9f");
-    			add_location(div0, file$8, 20, 8, 476);
-    			attr_dev(div1, "class", "column svelte-zf9k9f");
-    			add_location(div1, file$8, 19, 6, 447);
+    			br = element("br");
+    			t2 = space();
+    			span1 = element("span");
+    			t3 = text(t3_value);
+    			t4 = space();
+    			attr_dev(span0, "class", "title svelte-zp8gc6");
+    			add_location(span0, file$8, 21, 10, 514);
+    			attr_dev(br, "class", "svelte-zp8gc6");
+    			add_location(br, file$8, 22, 10, 558);
+    			attr_dev(span1, "class", "text svelte-zp8gc6");
+    			add_location(span1, file$8, 23, 10, 575);
+    			attr_dev(div0, "class", "card svelte-zp8gc6");
+    			add_location(div0, file$8, 20, 8, 485);
+    			attr_dev(div1, "class", "card-wrap svelte-zp8gc6");
+    			add_location(div1, file$8, 19, 6, 453);
     		},
 
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
     			append_dev(div1, div0);
-    			append_dev(div0, t0);
+    			append_dev(div0, span0);
+    			append_dev(span0, t0);
     			append_dev(div0, t1);
+    			append_dev(div0, br);
     			append_dev(div0, t2);
-    			append_dev(div1, t3);
+    			append_dev(div0, span1);
+    			append_dev(span1, t3);
+    			append_dev(div1, t4);
     		},
 
     		p: noop,
@@ -3014,6 +3029,7 @@ var app = (function () {
     		c: function create() {
     			h3 = element("h3");
     			h3.textContent = "Loading...";
+    			attr_dev(h3, "class", "svelte-zp8gc6");
     			add_location(h3, file$8, 11, 2, 228);
     		},
 

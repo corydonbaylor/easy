@@ -15,12 +15,13 @@
     In {data.state} during {data.period}
     {data.month}, the following produce is in season:
   </h3>
-  <div class="row">
+  <div class="container">
     {#each data.produce as { name, description }}
-      <div class="column">
+      <div class="card-wrap">
         <div class="card">
-          {name}
-          {description}
+          <span class="title">{name}</span>
+          <br />
+          <span class="text">{description}</span>
         </div>
       </div>
     {/each}
@@ -29,29 +30,31 @@
 
 <style>
   /* Float four columns side by side */
-  .column {
-    float: left;
-    width: 45%;
-    padding: 0 10px;
+
+  * {
+    box-sizing: border-box;
   }
 
-  /* Remove extra left and right margins, due to padding in columns */
-  .row {
-    margin: 0 -5px;
+  .container {
+    display: flex;
+    flex-flow: row wrap;
   }
 
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  .card-wrap {
+    flex: 0 0 33.333%;
+    display: flex;
+    padding: 10px; /* gutter width */
   }
 
-  /* Style the counter cards */
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    flex: 0 0 100%;
     padding: 16px;
-    text-align: center;
     background-color: #f1f1f1;
+    text-align: center;
+  }
+
+  .title {
+    font-weight: bold;
   }
 </style>
