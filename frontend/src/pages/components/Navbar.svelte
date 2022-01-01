@@ -1,5 +1,6 @@
 <nav class="navbar">
   <a href="/">Home</a>
+  <a href="/seasons">Seasons</a>
 </nav>
 
 <style>
@@ -17,5 +18,6 @@
     text-decoration: none;
     font-size: 17px;
     border-bottom: 3px solid transparent;
+    margin-right: 10px;
   }
 </style>
