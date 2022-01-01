@@ -20,7 +20,7 @@
       <div class="card-wrap">
         <div class="card">
           <span class="title">{name}</span>
-          <br />
+          <br /><br />
           <span class="text">{description}</span>
         </div>
       </div>
@@ -56,5 +56,6 @@
 
   .title {
     font-weight: bold;
+    font-size: 18px;
   }
 </style>

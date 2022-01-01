@@ -42,7 +42,7 @@ def get_produce():
 
         # when we are running locally, we wont have a valid ip address
         # so we will say that our state is Virginia for now
-        state = "Virginia"
+        state = "New York"
 
     # next we get the time of year
     dt = datetime.datetime.today()
