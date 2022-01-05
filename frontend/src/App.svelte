@@ -33,10 +33,13 @@
   import CoqAuVin from "./pages/french/CoqAuVin.svelte";
   import BeefBourguignon from "./pages/french/BeefBourguignon.svelte";
   import Baguette from "./pages/french/Baguette.svelte";
+  import FrenchOnion from "./pages/french/FrenchOnion.svelte";
+  import PouletChasseur from "./pages/french/PouletChasseur.svelte";
 
   // italian
   import HomemadePasta from "./pages/italian/HomemadePasta.svelte";
   import CacioPepe from "./pages/italian/CacioPepe.svelte";
+  import Pesto from "./pages/italian/Pesto.svelte";
 
   // Central European
   import Paprika from "./pages/central/Paprika.svelte";
@@ -70,10 +73,13 @@
   page("/coq_au_vin", () => (current = CoqAuVin));
   page("/beef_bourguignon", () => (current = BeefBourguignon));
   page("/baguette", () => (current = Baguette));
+  page("/french_onion_soup", () => (current = FrenchOnion));
+  page("/poulet_chasseur", () => (current = PouletChasseur));
 
   // italian routes
   page("/homemade_pasta", () => (current = HomemadePasta));
   page("/cacio_pepe", () => (current = CacioPepe));
+  page("/pesto", () => (current = Pesto));
 
   // central routes
   page("/chicken_paprika", () => (current = Paprika));

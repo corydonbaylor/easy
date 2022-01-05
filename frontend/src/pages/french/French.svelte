@@ -8,6 +8,13 @@
         straight from the oven.
       </p>
     </li>
+    <li>
+      <a href="/french_onion_soup">French Onion Soup (45 minutes) </a><br />
+      <p>
+        As delicious as it is easy, this amazing soup is the perfect first
+        course
+      </p>
+    </li>
   </ul>
 </div>
 <div class="sections">
@@ -16,6 +23,13 @@
     <li>
       <a href="/coq_au_vin">Coq Au Vin (1.5 hours)</a><br />
       <p>Braised chicken thighs flavored with red wine, bacon, and mushrooms</p>
+    </li>
+    <li>
+      <a href="/poulet_chasseur">Poulet Chasseur (1.5 hours)</a><br />
+      <p>
+        Braised chicken thighs flavored with white wine, fresh tarragon, and
+        mushrooms
+      </p>
     </li>
     <li>
       <a href="/beef_bourguignon">Beef Bourguignon (4-5 hours)</a><br />
