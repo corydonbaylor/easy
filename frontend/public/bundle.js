@@ -1905,7 +1905,7 @@ var app = (function () {
     const file$2 = "src/pages/french/French.svelte";
 
     function create_fragment$2(ctx) {
-    	var div0, h30, t1, ul0, li0, a0, br0, t3, p0, t5, li1, a1, br1, t7, p1, t9, div1, h31, t11, ul1, li2, a2, br2, t13, p2, t15, li3, a3, br3, t17, p3, t19, li4, a4, br4, t21, p4;
+    	var div0, h30, t1, ul0, li0, a0, br0, t3, p0, t5, li1, a1, br1, t7, p1, t9, li2, a2, br2, t11, p2, t13, div1, h31, t15, ul1, li3, a3, br3, t17, p3, t19, li4, a4, br4, t21, p4, t23, li5, a5, br5, t25, p5;
 
     	const block = {
     		c: function create() {
@@ -1930,34 +1930,42 @@ var app = (function () {
     			p1 = element("p");
     			p1.textContent = "As delicious as it is easy, this amazing soup is the perfect first\n        course";
     			t9 = space();
+    			li2 = element("li");
+    			a2 = element("a");
+    			a2.textContent = "Roasted Eggplant (20 minutes) ";
+    			br2 = element("br");
+    			t11 = space();
+    			p2 = element("p");
+    			p2.textContent = "A simple side dish, eggplant pairs well with any protein";
+    			t13 = space();
     			div1 = element("div");
     			h31 = element("h3");
     			h31.textContent = "Mains";
-    			t11 = space();
-    			ul1 = element("ul");
-    			li2 = element("li");
-    			a2 = element("a");
-    			a2.textContent = "Coq Au Vin (1.5 hours)";
-    			br2 = element("br");
-    			t13 = space();
-    			p2 = element("p");
-    			p2.textContent = "Braised chicken thighs flavored with red wine, bacon, and mushrooms";
     			t15 = space();
+    			ul1 = element("ul");
     			li3 = element("li");
     			a3 = element("a");
-    			a3.textContent = "Poulet Chasseur (1.5 hours)";
+    			a3.textContent = "Coq Au Vin (1.5 hours)";
     			br3 = element("br");
     			t17 = space();
     			p3 = element("p");
-    			p3.textContent = "Braised chicken thighs flavored with white wine, fresh tarragon, and\n        mushrooms";
+    			p3.textContent = "Braised chicken thighs flavored with red wine, bacon, and mushrooms";
     			t19 = space();
     			li4 = element("li");
     			a4 = element("a");
-    			a4.textContent = "Beef Bourguignon (4-5 hours)";
+    			a4.textContent = "Poulet Chasseur (1.5 hours)";
     			br4 = element("br");
     			t21 = space();
     			p4 = element("p");
-    			p4.textContent = "Slow cooked beef served in a red wine, mushroom sauce";
+    			p4.textContent = "Braised chicken thighs flavored with white wine, fresh tarragon, and\n        mushrooms";
+    			t23 = space();
+    			li5 = element("li");
+    			a5 = element("a");
+    			a5.textContent = "Beef Bourguignon (4-5 hours)";
+    			br5 = element("br");
+    			t25 = space();
+    			p5 = element("p");
+    			p5.textContent = "Slow cooked beef served in a red wine, mushroom sauce";
     			add_location(h30, file$2, 1, 2, 25);
     			attr_dev(a0, "href", "/baguette");
     			add_location(a0, file$2, 4, 6, 62);
@@ -1969,28 +1977,33 @@ var app = (function () {
     			add_location(br1, file$2, 11, 70, 333);
     			add_location(p1, file$2, 12, 6, 346);
     			add_location(li1, file$2, 10, 4, 258);
+    			attr_dev(a2, "href", "/roasted_eggplant");
+    			add_location(a2, file$2, 18, 6, 476);
+    			add_location(br2, file$2, 18, 68, 538);
+    			add_location(p2, file$2, 19, 6, 551);
+    			add_location(li2, file$2, 17, 4, 465);
     			add_location(ul0, file$2, 2, 2, 42);
     			attr_dev(div0, "class", "sections");
     			add_location(div0, file$2, 0, 0, 0);
-    			add_location(h31, file$2, 20, 2, 501);
-    			attr_dev(a2, "href", "/coq_au_vin");
-    			add_location(a2, file$2, 23, 6, 538);
-    			add_location(br2, file$2, 23, 54, 586);
-    			add_location(p2, file$2, 24, 6, 599);
-    			add_location(li2, file$2, 22, 4, 527);
-    			attr_dev(a3, "href", "/poulet_chasseur");
-    			add_location(a3, file$2, 27, 6, 699);
-    			add_location(br3, file$2, 27, 64, 757);
-    			add_location(p3, file$2, 28, 6, 770);
-    			add_location(li3, file$2, 26, 4, 688);
-    			attr_dev(a4, "href", "/beef_bourguignon");
-    			add_location(a4, file$2, 34, 6, 905);
-    			add_location(br4, file$2, 34, 66, 965);
-    			add_location(p4, file$2, 35, 6, 978);
-    			add_location(li4, file$2, 33, 4, 894);
-    			add_location(ul1, file$2, 21, 2, 518);
+    			add_location(h31, file$2, 24, 2, 665);
+    			attr_dev(a3, "href", "/coq_au_vin");
+    			add_location(a3, file$2, 27, 6, 702);
+    			add_location(br3, file$2, 27, 54, 750);
+    			add_location(p3, file$2, 28, 6, 763);
+    			add_location(li3, file$2, 26, 4, 691);
+    			attr_dev(a4, "href", "/poulet_chasseur");
+    			add_location(a4, file$2, 31, 6, 863);
+    			add_location(br4, file$2, 31, 64, 921);
+    			add_location(p4, file$2, 32, 6, 934);
+    			add_location(li4, file$2, 30, 4, 852);
+    			attr_dev(a5, "href", "/beef_bourguignon");
+    			add_location(a5, file$2, 38, 6, 1069);
+    			add_location(br5, file$2, 38, 66, 1129);
+    			add_location(p5, file$2, 39, 6, 1142);
+    			add_location(li5, file$2, 37, 4, 1058);
+    			add_location(ul1, file$2, 25, 2, 682);
     			attr_dev(div1, "class", "sections");
-    			add_location(div1, file$2, 19, 0, 476);
+    			add_location(div1, file$2, 23, 0, 640);
     		},
 
     		l: function claim(nodes) {
@@ -2013,17 +2026,17 @@ var app = (function () {
     			append_dev(li1, br1);
     			append_dev(li1, t7);
     			append_dev(li1, p1);
-    			insert_dev(target, t9, anchor);
-    			insert_dev(target, div1, anchor);
-    			append_dev(div1, h31);
-    			append_dev(div1, t11);
-    			append_dev(div1, ul1);
-    			append_dev(ul1, li2);
+    			append_dev(ul0, t9);
+    			append_dev(ul0, li2);
     			append_dev(li2, a2);
     			append_dev(li2, br2);
-    			append_dev(li2, t13);
+    			append_dev(li2, t11);
     			append_dev(li2, p2);
-    			append_dev(ul1, t15);
+    			insert_dev(target, t13, anchor);
+    			insert_dev(target, div1, anchor);
+    			append_dev(div1, h31);
+    			append_dev(div1, t15);
+    			append_dev(div1, ul1);
     			append_dev(ul1, li3);
     			append_dev(li3, a3);
     			append_dev(li3, br3);
@@ -2035,6 +2048,12 @@ var app = (function () {
     			append_dev(li4, br4);
     			append_dev(li4, t21);
     			append_dev(li4, p4);
+    			append_dev(ul1, t23);
+    			append_dev(ul1, li5);
+    			append_dev(li5, a5);
+    			append_dev(li5, br5);
+    			append_dev(li5, t25);
+    			append_dev(li5, p5);
     		},
 
     		p: noop,
@@ -2044,7 +2063,7 @@ var app = (function () {
     		d: function destroy(detaching) {
     			if (detaching) {
     				detach_dev(div0);
-    				detach_dev(t9);
+    				detach_dev(t13);
     				detach_dev(div1);
     			}
     		}
@@ -6114,11 +6133,155 @@ var app = (function () {
     	}
     }
 
-    /* src/pages/italian/HomemadePasta.svelte generated by Svelte v3.12.1 */
+    /* src/pages/french/Eggplant.svelte generated by Svelte v3.12.1 */
 
-    const file$l = "src/pages/italian/HomemadePasta.svelte";
+    const file$l = "src/pages/french/Eggplant.svelte";
 
     function create_fragment$l(ctx) {
+    	var h1, t1, p0, t2, em0, t4, em1, t6, t7, h20, t9, p1, t11, p2, t13, p3, t15, h21, t17, p4, strong0, t19, t20, p5, strong1, t22, t23, p6, strong2, t25;
+
+    	const block = {
+    		c: function create() {
+    			h1 = element("h1");
+    			h1.textContent = "Roasted Eggplant";
+    			t1 = space();
+    			p0 = element("p");
+    			t2 = text("A simple side that goes well with any protein heavy dish. I adapted this\n  recipe from Mimi Thorisson's French Country Cooking and interestingly she\n  describes this dish as being Italian in nature. But here's the thing, it\n  came from a ");
+    			em0 = element("em");
+    			em0.textContent = "French";
+    			t4 = text(" cookbook so its going in the ");
+    			em1 = element("em");
+    			em1.textContent = "French";
+    			t6 = text(" section\n  of my website.");
+    			t7 = space();
+    			h20 = element("h2");
+    			h20.textContent = "Ingredients";
+    			t9 = space();
+    			p1 = element("p");
+    			p1.textContent = "1 Large Eggplant";
+    			t11 = space();
+    			p2 = element("p");
+    			p2.textContent = "Pine Nuts or Cashews";
+    			t13 = space();
+    			p3 = element("p");
+    			p3.textContent = "Raisins";
+    			t15 = space();
+    			h21 = element("h2");
+    			h21.textContent = "Instructions";
+    			t17 = space();
+    			p4 = element("p");
+    			strong0 = element("strong");
+    			strong0.textContent = "Step 1:";
+    			t19 = text(" Preheat the oven to 400 degrees");
+    			t20 = space();
+    			p5 = element("p");
+    			strong1 = element("strong");
+    			strong1.textContent = "Step 2:";
+    			t22 = text(" In a large pan, heat olive oil in medium high heat and\n  cook the eggplant until they get a nice golden brown, season with salt and pepper");
+    			t23 = space();
+    			p6 = element("p");
+    			strong2 = element("strong");
+    			strong2.textContent = "Step 3:";
+    			t25 = text(" Arrange the eggplant in a single layer on the baking sheet,\n  scattering the nuts and raisins on top. Roast for about 10 minutes");
+    			add_location(h1, file$l, 0, 0, 0);
+    			add_location(em0, file$l, 5, 14, 278);
+    			add_location(em1, file$l, 5, 59, 323);
+    			add_location(p0, file$l, 1, 0, 26);
+    			add_location(h20, file$l, 8, 0, 369);
+    			add_location(p1, file$l, 9, 0, 390);
+    			add_location(p2, file$l, 10, 0, 414);
+    			add_location(p3, file$l, 11, 0, 442);
+    			add_location(h21, file$l, 12, 0, 457);
+    			add_location(strong0, file$l, 13, 3, 482);
+    			add_location(p4, file$l, 13, 0, 479);
+    			add_location(strong1, file$l, 15, 2, 549);
+    			add_location(p5, file$l, 14, 0, 543);
+    			add_location(strong2, file$l, 19, 2, 724);
+    			add_location(p6, file$l, 18, 0, 718);
+    		},
+
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+
+    		m: function mount(target, anchor) {
+    			insert_dev(target, h1, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, p0, anchor);
+    			append_dev(p0, t2);
+    			append_dev(p0, em0);
+    			append_dev(p0, t4);
+    			append_dev(p0, em1);
+    			append_dev(p0, t6);
+    			insert_dev(target, t7, anchor);
+    			insert_dev(target, h20, anchor);
+    			insert_dev(target, t9, anchor);
+    			insert_dev(target, p1, anchor);
+    			insert_dev(target, t11, anchor);
+    			insert_dev(target, p2, anchor);
+    			insert_dev(target, t13, anchor);
+    			insert_dev(target, p3, anchor);
+    			insert_dev(target, t15, anchor);
+    			insert_dev(target, h21, anchor);
+    			insert_dev(target, t17, anchor);
+    			insert_dev(target, p4, anchor);
+    			append_dev(p4, strong0);
+    			append_dev(p4, t19);
+    			insert_dev(target, t20, anchor);
+    			insert_dev(target, p5, anchor);
+    			append_dev(p5, strong1);
+    			append_dev(p5, t22);
+    			insert_dev(target, t23, anchor);
+    			insert_dev(target, p6, anchor);
+    			append_dev(p6, strong2);
+    			append_dev(p6, t25);
+    		},
+
+    		p: noop,
+    		i: noop,
+    		o: noop,
+
+    		d: function destroy(detaching) {
+    			if (detaching) {
+    				detach_dev(h1);
+    				detach_dev(t1);
+    				detach_dev(p0);
+    				detach_dev(t7);
+    				detach_dev(h20);
+    				detach_dev(t9);
+    				detach_dev(p1);
+    				detach_dev(t11);
+    				detach_dev(p2);
+    				detach_dev(t13);
+    				detach_dev(p3);
+    				detach_dev(t15);
+    				detach_dev(h21);
+    				detach_dev(t17);
+    				detach_dev(p4);
+    				detach_dev(t20);
+    				detach_dev(p5);
+    				detach_dev(t23);
+    				detach_dev(p6);
+    			}
+    		}
+    	};
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_fragment$l.name, type: "component", source: "", ctx });
+    	return block;
+    }
+
+    class Eggplant extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, null, create_fragment$l, safe_not_equal, []);
+    		dispatch_dev("SvelteRegisterComponent", { component: this, tagName: "Eggplant", options, id: create_fragment$l.name });
+    	}
+    }
+
+    /* src/pages/italian/HomemadePasta.svelte generated by Svelte v3.12.1 */
+
+    const file$m = "src/pages/italian/HomemadePasta.svelte";
+
+    function create_fragment$m(ctx) {
     	var h1, t1, p0, t3, p1, t5, p2, t7, h20, t9, p3, strong0, t11, p4, t13, p5, t15, p6, strong1, t17, p7, t19, p8, t21, p9, t23, p10, t25, p11, strong2, t27, p12, t29, p13, t31, h21, t33, p14, strong3, t35, t36, p15, strong4, t38, t39, p16, strong5, t41, t42, p17, strong6, t44, t45, p18, strong7, t47, t48, p19, strong8, t50, t51, p20, strong9, t53, t54, p21, strong10, t56, t57, p22, strong11, t59, t60, p23, strong12, t62, t63, p24, t65, p25;
 
     	const block = {
@@ -6232,48 +6395,48 @@ var app = (function () {
     			t65 = space();
     			p25 = element("p");
     			p25.textContent = " ";
-    			add_location(h1, file$l, 0, 0, 0);
-    			add_location(p0, file$l, 1, 0, 24);
-    			add_location(p1, file$l, 8, 0, 380);
-    			add_location(p2, file$l, 13, 0, 609);
-    			add_location(h20, file$l, 14, 0, 678);
-    			add_location(strong0, file$l, 15, 3, 702);
-    			add_location(p3, file$l, 15, 0, 699);
-    			add_location(p4, file$l, 16, 0, 729);
-    			add_location(p5, file$l, 17, 0, 752);
-    			add_location(strong1, file$l, 18, 3, 769);
-    			add_location(p6, file$l, 18, 0, 766);
-    			add_location(p7, file$l, 19, 0, 796);
-    			add_location(p8, file$l, 20, 0, 822);
-    			add_location(p9, file$l, 21, 0, 845);
-    			add_location(p10, file$l, 22, 0, 860);
-    			add_location(strong2, file$l, 23, 3, 879);
-    			add_location(p11, file$l, 23, 0, 876);
-    			add_location(p12, file$l, 24, 0, 918);
-    			add_location(p13, file$l, 25, 0, 937);
-    			add_location(h21, file$l, 26, 0, 957);
-    			add_location(strong3, file$l, 28, 2, 985);
-    			add_location(p14, file$l, 27, 0, 979);
-    			add_location(strong4, file$l, 32, 2, 1144);
-    			add_location(p15, file$l, 31, 0, 1138);
-    			add_location(strong5, file$l, 37, 2, 1384);
-    			add_location(p16, file$l, 36, 0, 1378);
-    			add_location(strong6, file$l, 43, 2, 1689);
-    			add_location(p17, file$l, 42, 0, 1683);
-    			add_location(strong7, file$l, 48, 2, 1878);
-    			add_location(p18, file$l, 47, 0, 1872);
-    			add_location(strong8, file$l, 53, 2, 2065);
-    			add_location(p19, file$l, 52, 0, 2059);
-    			add_location(strong9, file$l, 58, 2, 2287);
-    			add_location(p20, file$l, 57, 0, 2281);
-    			add_location(strong10, file$l, 63, 2, 2530);
-    			add_location(p21, file$l, 62, 0, 2524);
-    			add_location(strong11, file$l, 68, 2, 2773);
-    			add_location(p22, file$l, 67, 0, 2767);
-    			add_location(strong12, file$l, 72, 2, 2939);
-    			add_location(p23, file$l, 71, 0, 2933);
-    			add_location(p24, file$l, 75, 0, 3058);
-    			add_location(p25, file$l, 76, 0, 3072);
+    			add_location(h1, file$m, 0, 0, 0);
+    			add_location(p0, file$m, 1, 0, 24);
+    			add_location(p1, file$m, 8, 0, 380);
+    			add_location(p2, file$m, 13, 0, 609);
+    			add_location(h20, file$m, 14, 0, 678);
+    			add_location(strong0, file$m, 15, 3, 702);
+    			add_location(p3, file$m, 15, 0, 699);
+    			add_location(p4, file$m, 16, 0, 729);
+    			add_location(p5, file$m, 17, 0, 752);
+    			add_location(strong1, file$m, 18, 3, 769);
+    			add_location(p6, file$m, 18, 0, 766);
+    			add_location(p7, file$m, 19, 0, 796);
+    			add_location(p8, file$m, 20, 0, 822);
+    			add_location(p9, file$m, 21, 0, 845);
+    			add_location(p10, file$m, 22, 0, 860);
+    			add_location(strong2, file$m, 23, 3, 879);
+    			add_location(p11, file$m, 23, 0, 876);
+    			add_location(p12, file$m, 24, 0, 918);
+    			add_location(p13, file$m, 25, 0, 937);
+    			add_location(h21, file$m, 26, 0, 957);
+    			add_location(strong3, file$m, 28, 2, 985);
+    			add_location(p14, file$m, 27, 0, 979);
+    			add_location(strong4, file$m, 32, 2, 1144);
+    			add_location(p15, file$m, 31, 0, 1138);
+    			add_location(strong5, file$m, 37, 2, 1384);
+    			add_location(p16, file$m, 36, 0, 1378);
+    			add_location(strong6, file$m, 43, 2, 1689);
+    			add_location(p17, file$m, 42, 0, 1683);
+    			add_location(strong7, file$m, 48, 2, 1878);
+    			add_location(p18, file$m, 47, 0, 1872);
+    			add_location(strong8, file$m, 53, 2, 2065);
+    			add_location(p19, file$m, 52, 0, 2059);
+    			add_location(strong9, file$m, 58, 2, 2287);
+    			add_location(p20, file$m, 57, 0, 2281);
+    			add_location(strong10, file$m, 63, 2, 2530);
+    			add_location(p21, file$m, 62, 0, 2524);
+    			add_location(strong11, file$m, 68, 2, 2773);
+    			add_location(p22, file$m, 67, 0, 2767);
+    			add_location(strong12, file$m, 72, 2, 2939);
+    			add_location(p23, file$m, 71, 0, 2933);
+    			add_location(p24, file$m, 75, 0, 3058);
+    			add_location(p25, file$m, 76, 0, 3072);
     		},
 
     		l: function claim(nodes) {
@@ -6429,23 +6592,23 @@ var app = (function () {
     			}
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_fragment$l.name, type: "component", source: "", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_fragment$m.name, type: "component", source: "", ctx });
     	return block;
     }
 
     class HomemadePasta extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$l, safe_not_equal, []);
-    		dispatch_dev("SvelteRegisterComponent", { component: this, tagName: "HomemadePasta", options, id: create_fragment$l.name });
+    		init(this, options, null, create_fragment$m, safe_not_equal, []);
+    		dispatch_dev("SvelteRegisterComponent", { component: this, tagName: "HomemadePasta", options, id: create_fragment$m.name });
     	}
     }
 
     /* src/pages/italian/CacioPepe.svelte generated by Svelte v3.12.1 */
 
-    const file$m = "src/pages/italian/CacioPepe.svelte";
+    const file$n = "src/pages/italian/CacioPepe.svelte";
 
-    function create_fragment$m(ctx) {
+    function create_fragment$n(ctx) {
     	var h1, t1, p0, t3, p1, t4, em, t6, t7, h20, t9, p2, t11, p3, t13, p4, t15, p5, t17, h21, t19, p6, strong0, t21, t22, p7, strong1, t24, t25, p8, strong2, t27, t28, p9, strong3, t30, t31, p10, strong4, t33, t34, p11, strong5, t36, t37, p12, strong6, t39, t40, p13, strong7, t42, t43, p14, strong8, t45, t46, p15;
 
     	const block = {
@@ -6527,35 +6690,35 @@ var app = (function () {
     			t46 = space();
     			p15 = element("p");
     			p15.textContent = " ";
-    			add_location(h1, file$m, 0, 0, 0);
-    			add_location(p0, file$m, 1, 0, 22);
-    			add_location(em, file$m, 10, 74, 563);
-    			add_location(p1, file$m, 9, 0, 485);
-    			add_location(h20, file$m, 16, 0, 830);
-    			add_location(p2, file$m, 17, 0, 851);
-    			add_location(p3, file$m, 18, 0, 887);
-    			add_location(p4, file$m, 19, 0, 921);
-    			add_location(p5, file$m, 20, 0, 946);
-    			add_location(h21, file$m, 21, 0, 960);
-    			add_location(strong0, file$m, 23, 2, 988);
-    			add_location(p6, file$m, 22, 0, 982);
-    			add_location(strong1, file$m, 27, 2, 1106);
-    			add_location(p7, file$m, 26, 0, 1100);
-    			add_location(strong2, file$m, 31, 2, 1218);
-    			add_location(p8, file$m, 30, 0, 1212);
-    			add_location(strong3, file$m, 38, 2, 1587);
-    			add_location(p9, file$m, 37, 0, 1581);
-    			add_location(strong4, file$m, 42, 2, 1755);
-    			add_location(p10, file$m, 41, 0, 1749);
-    			add_location(strong5, file$m, 46, 2, 1873);
-    			add_location(p11, file$m, 45, 0, 1867);
-    			add_location(strong6, file$m, 51, 2, 2084);
-    			add_location(p12, file$m, 50, 0, 2078);
-    			add_location(strong7, file$m, 54, 2, 2179);
-    			add_location(p13, file$m, 53, 0, 2173);
-    			add_location(strong8, file$m, 59, 2, 2406);
-    			add_location(p14, file$m, 58, 0, 2400);
-    			add_location(p15, file$m, 64, 0, 2723);
+    			add_location(h1, file$n, 0, 0, 0);
+    			add_location(p0, file$n, 1, 0, 22);
+    			add_location(em, file$n, 10, 74, 563);
+    			add_location(p1, file$n, 9, 0, 485);
+    			add_location(h20, file$n, 16, 0, 830);
+    			add_location(p2, file$n, 17, 0, 851);
+    			add_location(p3, file$n, 18, 0, 887);
+    			add_location(p4, file$n, 19, 0, 921);
+    			add_location(p5, file$n, 20, 0, 946);
+    			add_location(h21, file$n, 21, 0, 960);
+    			add_location(strong0, file$n, 23, 2, 988);
+    			add_location(p6, file$n, 22, 0, 982);
+    			add_location(strong1, file$n, 27, 2, 1106);
+    			add_location(p7, file$n, 26, 0, 1100);
+    			add_location(strong2, file$n, 31, 2, 1218);
+    			add_location(p8, file$n, 30, 0, 1212);
+    			add_location(strong3, file$n, 38, 2, 1587);
+    			add_location(p9, file$n, 37, 0, 1581);
+    			add_location(strong4, file$n, 42, 2, 1755);
+    			add_location(p10, file$n, 41, 0, 1749);
+    			add_location(strong5, file$n, 46, 2, 1873);
+    			add_location(p11, file$n, 45, 0, 1867);
+    			add_location(strong6, file$n, 51, 2, 2084);
+    			add_location(p12, file$n, 50, 0, 2078);
+    			add_location(strong7, file$n, 54, 2, 2179);
+    			add_location(p13, file$n, 53, 0, 2173);
+    			add_location(strong8, file$n, 59, 2, 2406);
+    			add_location(p14, file$n, 58, 0, 2400);
+    			add_location(p15, file$n, 64, 0, 2723);
     		},
 
     		l: function claim(nodes) {
@@ -6669,23 +6832,23 @@ var app = (function () {
     			}
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_fragment$m.name, type: "component", source: "", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_fragment$n.name, type: "component", source: "", ctx });
     	return block;
     }
 
     class CacioPepe extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$m, safe_not_equal, []);
-    		dispatch_dev("SvelteRegisterComponent", { component: this, tagName: "CacioPepe", options, id: create_fragment$m.name });
+    		init(this, options, null, create_fragment$n, safe_not_equal, []);
+    		dispatch_dev("SvelteRegisterComponent", { component: this, tagName: "CacioPepe", options, id: create_fragment$n.name });
     	}
     }
 
     /* src/pages/italian/Pesto.svelte generated by Svelte v3.12.1 */
 
-    const file$n = "src/pages/italian/Pesto.svelte";
+    const file$o = "src/pages/italian/Pesto.svelte";
 
-    function create_fragment$n(ctx) {
+    function create_fragment$o(ctx) {
     	var h1, t1, p0, t3, h20, t5, p1, t7, p2, t9, p3, t11, p4, t13, p5, t15, h21, t17, p6, strong0, t19, t20, p7, strong1, t22, t23, p8, strong2, t25;
 
     	const block = {
@@ -6731,21 +6894,21 @@ var app = (function () {
     			strong2 = element("strong");
     			strong2.textContent = "Step 3:";
     			t25 = text(" Add the parmesan and pulse the blender until it is combined");
-    			add_location(h1, file$n, 0, 0, 0);
-    			add_location(p0, file$n, 1, 0, 15);
-    			add_location(h20, file$n, 7, 0, 308);
-    			add_location(p1, file$n, 8, 0, 329);
-    			add_location(p2, file$n, 9, 0, 365);
-    			add_location(p3, file$n, 10, 0, 405);
-    			add_location(p4, file$n, 11, 0, 437);
-    			add_location(p5, file$n, 12, 0, 471);
-    			add_location(h21, file$n, 13, 0, 499);
-    			add_location(strong0, file$n, 15, 2, 527);
-    			add_location(p6, file$n, 14, 0, 521);
-    			add_location(strong1, file$n, 19, 2, 626);
-    			add_location(p7, file$n, 18, 0, 620);
-    			add_location(strong2, file$n, 23, 2, 771);
-    			add_location(p8, file$n, 22, 0, 765);
+    			add_location(h1, file$o, 0, 0, 0);
+    			add_location(p0, file$o, 1, 0, 15);
+    			add_location(h20, file$o, 7, 0, 308);
+    			add_location(p1, file$o, 8, 0, 329);
+    			add_location(p2, file$o, 9, 0, 365);
+    			add_location(p3, file$o, 10, 0, 405);
+    			add_location(p4, file$o, 11, 0, 437);
+    			add_location(p5, file$o, 12, 0, 471);
+    			add_location(h21, file$o, 13, 0, 499);
+    			add_location(strong0, file$o, 15, 2, 527);
+    			add_location(p6, file$o, 14, 0, 521);
+    			add_location(strong1, file$o, 19, 2, 626);
+    			add_location(p7, file$o, 18, 0, 620);
+    			add_location(strong2, file$o, 23, 2, 771);
+    			add_location(p8, file$o, 22, 0, 765);
     		},
 
     		l: function claim(nodes) {
@@ -6816,23 +6979,23 @@ var app = (function () {
     			}
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_fragment$n.name, type: "component", source: "", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_fragment$o.name, type: "component", source: "", ctx });
     	return block;
     }
 
     class Pesto extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$n, safe_not_equal, []);
-    		dispatch_dev("SvelteRegisterComponent", { component: this, tagName: "Pesto", options, id: create_fragment$n.name });
+    		init(this, options, null, create_fragment$o, safe_not_equal, []);
+    		dispatch_dev("SvelteRegisterComponent", { component: this, tagName: "Pesto", options, id: create_fragment$o.name });
     	}
     }
 
     /* src/pages/central/Paprika.svelte generated by Svelte v3.12.1 */
 
-    const file$o = "src/pages/central/Paprika.svelte";
+    const file$p = "src/pages/central/Paprika.svelte";
 
-    function create_fragment$o(ctx) {
+    function create_fragment$p(ctx) {
     	var h1, t1, p0, t3, p1, t5, h20, strong0, t7, p2, t9, p3, t11, p4, t13, p5, t15, p6, t17, p7, t19, p8, t21, p9, t23, p10, t25, p11, strong1, t27, t28, p12, t30, p13, t32, p14, t34, p15, t36, h21, t38, p16, strong2, t40, t41, p17, strong3, t43, t44, p18, strong4, t46, t47, p19, strong5, t49, em0, t51, p20, strong6, t53, t54, p21, strong7, t56, t57, p22, strong8, t59, p23, em1, t61, p24, strong9, t63, t64, p25, strong10, t66, t67, p26, strong11, t69, t70, p27;
 
     	const block = {
@@ -6954,51 +7117,51 @@ var app = (function () {
     			t70 = space();
     			p27 = element("p");
     			p27.textContent = " ";
-    			add_location(h1, file$o, 0, 0, 0);
-    			add_location(p0, file$o, 1, 0, 38);
-    			add_location(p1, file$o, 9, 0, 478);
-    			add_location(strong0, file$o, 10, 4, 555);
-    			add_location(h20, file$o, 10, 0, 551);
-    			add_location(p2, file$o, 11, 0, 590);
-    			add_location(p3, file$o, 12, 0, 610);
-    			add_location(p4, file$o, 13, 0, 656);
-    			add_location(p5, file$o, 14, 0, 683);
-    			add_location(p6, file$o, 15, 0, 718);
-    			add_location(p7, file$o, 16, 0, 755);
-    			add_location(p8, file$o, 17, 0, 780);
-    			add_location(p9, file$o, 18, 0, 822);
-    			add_location(p10, file$o, 19, 0, 851);
-    			add_location(strong1, file$o, 20, 3, 867);
-    			add_location(p11, file$o, 20, 0, 864);
-    			add_location(p12, file$o, 21, 0, 896);
-    			add_location(p13, file$o, 22, 0, 926);
-    			add_location(p14, file$o, 23, 0, 940);
-    			add_location(p15, file$o, 24, 0, 982);
-    			add_location(h21, file$o, 25, 0, 1012);
-    			add_location(strong2, file$o, 27, 2, 1041);
-    			add_location(p16, file$o, 26, 0, 1035);
-    			add_location(strong3, file$o, 31, 2, 1182);
-    			add_location(p17, file$o, 30, 0, 1176);
-    			add_location(strong4, file$o, 36, 2, 1419);
-    			add_location(p18, file$o, 35, 0, 1413);
-    			add_location(strong5, file$o, 41, 2, 1614);
-    			add_location(em0, file$o, 42, 2, 1691);
-    			add_location(p19, file$o, 40, 0, 1608);
-    			add_location(strong6, file$o, 47, 3, 1810);
-    			add_location(p20, file$o, 47, 0, 1807);
-    			add_location(strong7, file$o, 49, 2, 1880);
-    			add_location(p21, file$o, 48, 0, 1874);
-    			add_location(strong8, file$o, 52, 3, 2005);
-    			add_location(p22, file$o, 52, 0, 2002);
-    			add_location(em1, file$o, 53, 3, 2050);
-    			add_location(p23, file$o, 53, 0, 2047);
-    			add_location(strong9, file$o, 54, 3, 2123);
-    			add_location(p24, file$o, 54, 0, 2120);
-    			add_location(strong10, file$o, 56, 2, 2206);
-    			add_location(p25, file$o, 55, 0, 2200);
-    			add_location(strong11, file$o, 59, 3, 2352);
-    			add_location(p26, file$o, 59, 0, 2349);
-    			add_location(p27, file$o, 60, 0, 2426);
+    			add_location(h1, file$p, 0, 0, 0);
+    			add_location(p0, file$p, 1, 0, 38);
+    			add_location(p1, file$p, 9, 0, 478);
+    			add_location(strong0, file$p, 10, 4, 555);
+    			add_location(h20, file$p, 10, 0, 551);
+    			add_location(p2, file$p, 11, 0, 590);
+    			add_location(p3, file$p, 12, 0, 610);
+    			add_location(p4, file$p, 13, 0, 656);
+    			add_location(p5, file$p, 14, 0, 683);
+    			add_location(p6, file$p, 15, 0, 718);
+    			add_location(p7, file$p, 16, 0, 755);
+    			add_location(p8, file$p, 17, 0, 780);
+    			add_location(p9, file$p, 18, 0, 822);
+    			add_location(p10, file$p, 19, 0, 851);
+    			add_location(strong1, file$p, 20, 3, 867);
+    			add_location(p11, file$p, 20, 0, 864);
+    			add_location(p12, file$p, 21, 0, 896);
+    			add_location(p13, file$p, 22, 0, 926);
+    			add_location(p14, file$p, 23, 0, 940);
+    			add_location(p15, file$p, 24, 0, 982);
+    			add_location(h21, file$p, 25, 0, 1012);
+    			add_location(strong2, file$p, 27, 2, 1041);
+    			add_location(p16, file$p, 26, 0, 1035);
+    			add_location(strong3, file$p, 31, 2, 1182);
+    			add_location(p17, file$p, 30, 0, 1176);
+    			add_location(strong4, file$p, 36, 2, 1419);
+    			add_location(p18, file$p, 35, 0, 1413);
+    			add_location(strong5, file$p, 41, 2, 1614);
+    			add_location(em0, file$p, 42, 2, 1691);
+    			add_location(p19, file$p, 40, 0, 1608);
+    			add_location(strong6, file$p, 47, 3, 1810);
+    			add_location(p20, file$p, 47, 0, 1807);
+    			add_location(strong7, file$p, 49, 2, 1880);
+    			add_location(p21, file$p, 48, 0, 1874);
+    			add_location(strong8, file$p, 52, 3, 2005);
+    			add_location(p22, file$p, 52, 0, 2002);
+    			add_location(em1, file$p, 53, 3, 2050);
+    			add_location(p23, file$p, 53, 0, 2047);
+    			add_location(strong9, file$p, 54, 3, 2123);
+    			add_location(p24, file$p, 54, 0, 2120);
+    			add_location(strong10, file$p, 56, 2, 2206);
+    			add_location(p25, file$p, 55, 0, 2200);
+    			add_location(strong11, file$p, 59, 3, 2352);
+    			add_location(p26, file$p, 59, 0, 2349);
+    			add_location(p27, file$p, 60, 0, 2426);
     		},
 
     		l: function claim(nodes) {
@@ -7163,23 +7326,23 @@ var app = (function () {
     			}
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_fragment$o.name, type: "component", source: "", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_fragment$p.name, type: "component", source: "", ctx });
     	return block;
     }
 
     class Paprika extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$o, safe_not_equal, []);
-    		dispatch_dev("SvelteRegisterComponent", { component: this, tagName: "Paprika", options, id: create_fragment$o.name });
+    		init(this, options, null, create_fragment$p, safe_not_equal, []);
+    		dispatch_dev("SvelteRegisterComponent", { component: this, tagName: "Paprika", options, id: create_fragment$p.name });
     	}
     }
 
     /* src/pages/central/Korozott.svelte generated by Svelte v3.12.1 */
 
-    const file$p = "src/pages/central/Korozott.svelte";
+    const file$q = "src/pages/central/Korozott.svelte";
 
-    function create_fragment$p(ctx) {
+    function create_fragment$q(ctx) {
     	var h1, strong0, t1, p0, t3, p1, strong1, t5, p2, t6, em, t8, p3, t10, p4, t12, p5, t14, p6, t16, p7, t18, p8, t20, p9, t22, p10, t24, p11, t26, h2, t28, p12, strong2, t30, t31, p13, strong3, t33, t34, p14, strong4, t36, t37, p15, strong5, t39, t40, p16, strong6, t42;
 
     	const block = {
@@ -7254,33 +7417,33 @@ var app = (function () {
     			strong6 = element("strong");
     			strong6.textContent = "Step 5:";
     			t42 = text(" Mix in the sour cream with a fork, the amount depends\n  on how creamy you like your kőrözött.");
-    			add_location(strong0, file$p, 0, 4, 4);
-    			add_location(h1, file$p, 0, 0, 0);
-    			add_location(p0, file$p, 1, 0, 35);
-    			add_location(strong1, file$p, 9, 3, 497);
-    			add_location(p1, file$p, 9, 0, 494);
-    			add_location(em, file$p, 11, 80, 615);
-    			add_location(p2, file$p, 10, 0, 531);
-    			add_location(p3, file$p, 15, 0, 666);
-    			add_location(p4, file$p, 16, 0, 681);
-    			add_location(p5, file$p, 17, 0, 746);
-    			add_location(p6, file$p, 18, 0, 783);
-    			add_location(p7, file$p, 19, 0, 819);
-    			add_location(p8, file$p, 20, 0, 851);
-    			add_location(p9, file$p, 21, 0, 891);
-    			add_location(p10, file$p, 22, 0, 938);
-    			add_location(p11, file$p, 23, 0, 978);
-    			add_location(h2, file$p, 24, 0, 1021);
-    			add_location(strong2, file$p, 25, 3, 1046);
-    			add_location(p12, file$p, 25, 0, 1043);
-    			add_location(strong3, file$p, 26, 3, 1111);
-    			add_location(p13, file$p, 26, 0, 1108);
-    			add_location(strong4, file$p, 27, 3, 1174);
-    			add_location(p14, file$p, 27, 0, 1171);
-    			add_location(strong5, file$p, 29, 2, 1242);
-    			add_location(p15, file$p, 28, 0, 1236);
-    			add_location(strong6, file$p, 33, 2, 1386);
-    			add_location(p16, file$p, 32, 0, 1380);
+    			add_location(strong0, file$q, 0, 4, 4);
+    			add_location(h1, file$q, 0, 0, 0);
+    			add_location(p0, file$q, 1, 0, 35);
+    			add_location(strong1, file$q, 9, 3, 497);
+    			add_location(p1, file$q, 9, 0, 494);
+    			add_location(em, file$q, 11, 80, 615);
+    			add_location(p2, file$q, 10, 0, 531);
+    			add_location(p3, file$q, 15, 0, 666);
+    			add_location(p4, file$q, 16, 0, 681);
+    			add_location(p5, file$q, 17, 0, 746);
+    			add_location(p6, file$q, 18, 0, 783);
+    			add_location(p7, file$q, 19, 0, 819);
+    			add_location(p8, file$q, 20, 0, 851);
+    			add_location(p9, file$q, 21, 0, 891);
+    			add_location(p10, file$q, 22, 0, 938);
+    			add_location(p11, file$q, 23, 0, 978);
+    			add_location(h2, file$q, 24, 0, 1021);
+    			add_location(strong2, file$q, 25, 3, 1046);
+    			add_location(p12, file$q, 25, 0, 1043);
+    			add_location(strong3, file$q, 26, 3, 1111);
+    			add_location(p13, file$q, 26, 0, 1108);
+    			add_location(strong4, file$q, 27, 3, 1174);
+    			add_location(p14, file$q, 27, 0, 1171);
+    			add_location(strong5, file$q, 29, 2, 1242);
+    			add_location(p15, file$q, 28, 0, 1236);
+    			add_location(strong6, file$q, 33, 2, 1386);
+    			add_location(p16, file$q, 32, 0, 1380);
     		},
 
     		l: function claim(nodes) {
@@ -7387,23 +7550,23 @@ var app = (function () {
     			}
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_fragment$p.name, type: "component", source: "", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_fragment$q.name, type: "component", source: "", ctx });
     	return block;
     }
 
     class Korozott extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$p, safe_not_equal, []);
-    		dispatch_dev("SvelteRegisterComponent", { component: this, tagName: "Korozott", options, id: create_fragment$p.name });
+    		init(this, options, null, create_fragment$q, safe_not_equal, []);
+    		dispatch_dev("SvelteRegisterComponent", { component: this, tagName: "Korozott", options, id: create_fragment$q.name });
     	}
     }
 
     /* src/pages/central/Makosguba.svelte generated by Svelte v3.12.1 */
 
-    const file$q = "src/pages/central/Makosguba.svelte";
+    const file$r = "src/pages/central/Makosguba.svelte";
 
-    function create_fragment$q(ctx) {
+    function create_fragment$r(ctx) {
     	var h1, t1, p0, t3, p1, t5, h20, t7, p2, t9, p3, t11, p4, t13, p5, t15, p6, t17, p7, t19, p8, t21, p9, strong0, t23, p10, t25, p11, t27, p12, t29, p13, t31, p14, t33, h21, t35, p15, strong1, t37, t38, p16, strong2, t40, t41, p17, strong3, t43, t44, p18, strong4, t46, t47, p19, strong5, t49, t50, p20, strong6, t52, t53, p21, em, t55, p22, strong7, t57, t58, p23, strong8, t60, t61, p24, strong9, t63;
 
     	const block = {
@@ -7511,45 +7674,45 @@ var app = (function () {
     			strong9 = element("strong");
     			strong9.textContent = "Step 3:";
     			t63 = text(" Serve the baked poppy seed bread with the vanilla custard.\n  You can use sweet butter instead of the vanilla custard: heat up butter in a pan\n  until just before it starts burning.");
-    			add_location(h1, file$q, 0, 0, 0);
-    			add_location(p0, file$q, 1, 0, 19);
-    			add_location(p1, file$q, 8, 0, 371);
-    			add_location(h20, file$q, 13, 0, 542);
-    			add_location(p2, file$q, 14, 0, 564);
-    			add_location(p3, file$q, 15, 0, 608);
-    			add_location(p4, file$q, 16, 0, 647);
-    			add_location(p5, file$q, 17, 0, 721);
-    			add_location(p6, file$q, 18, 0, 765);
-    			add_location(p7, file$q, 19, 0, 807);
-    			add_location(p8, file$q, 20, 0, 833);
-    			add_location(strong0, file$q, 21, 3, 867);
-    			add_location(p9, file$q, 21, 0, 864);
-    			add_location(p10, file$q, 22, 0, 913);
-    			add_location(p11, file$q, 23, 0, 932);
-    			add_location(p12, file$q, 24, 0, 962);
-    			add_location(p13, file$q, 25, 0, 994);
-    			add_location(p14, file$q, 26, 0, 1020);
-    			add_location(h21, file$q, 27, 0, 1051);
-    			add_location(strong1, file$q, 28, 3, 1077);
-    			add_location(p15, file$q, 28, 0, 1074);
-    			add_location(strong2, file$q, 29, 3, 1153);
-    			add_location(p16, file$q, 29, 0, 1150);
-    			add_location(strong3, file$q, 31, 2, 1234);
-    			add_location(p17, file$q, 30, 0, 1228);
-    			add_location(strong4, file$q, 34, 3, 1340);
-    			add_location(p18, file$q, 34, 0, 1337);
-    			add_location(strong5, file$q, 36, 2, 1411);
-    			add_location(p19, file$q, 35, 0, 1405);
-    			add_location(strong6, file$q, 42, 2, 1720);
-    			add_location(p20, file$q, 41, 0, 1714);
-    			add_location(em, file$q, 44, 3, 1808);
-    			add_location(p21, file$q, 44, 0, 1805);
-    			add_location(strong7, file$q, 46, 2, 1856);
-    			add_location(p22, file$q, 45, 0, 1850);
-    			add_location(strong8, file$q, 49, 2, 1948);
-    			add_location(p23, file$q, 48, 0, 1942);
-    			add_location(strong9, file$q, 53, 2, 2091);
-    			add_location(p24, file$q, 52, 0, 2085);
+    			add_location(h1, file$r, 0, 0, 0);
+    			add_location(p0, file$r, 1, 0, 19);
+    			add_location(p1, file$r, 8, 0, 371);
+    			add_location(h20, file$r, 13, 0, 542);
+    			add_location(p2, file$r, 14, 0, 564);
+    			add_location(p3, file$r, 15, 0, 608);
+    			add_location(p4, file$r, 16, 0, 647);
+    			add_location(p5, file$r, 17, 0, 721);
+    			add_location(p6, file$r, 18, 0, 765);
+    			add_location(p7, file$r, 19, 0, 807);
+    			add_location(p8, file$r, 20, 0, 833);
+    			add_location(strong0, file$r, 21, 3, 867);
+    			add_location(p9, file$r, 21, 0, 864);
+    			add_location(p10, file$r, 22, 0, 913);
+    			add_location(p11, file$r, 23, 0, 932);
+    			add_location(p12, file$r, 24, 0, 962);
+    			add_location(p13, file$r, 25, 0, 994);
+    			add_location(p14, file$r, 26, 0, 1020);
+    			add_location(h21, file$r, 27, 0, 1051);
+    			add_location(strong1, file$r, 28, 3, 1077);
+    			add_location(p15, file$r, 28, 0, 1074);
+    			add_location(strong2, file$r, 29, 3, 1153);
+    			add_location(p16, file$r, 29, 0, 1150);
+    			add_location(strong3, file$r, 31, 2, 1234);
+    			add_location(p17, file$r, 30, 0, 1228);
+    			add_location(strong4, file$r, 34, 3, 1340);
+    			add_location(p18, file$r, 34, 0, 1337);
+    			add_location(strong5, file$r, 36, 2, 1411);
+    			add_location(p19, file$r, 35, 0, 1405);
+    			add_location(strong6, file$r, 42, 2, 1720);
+    			add_location(p20, file$r, 41, 0, 1714);
+    			add_location(em, file$r, 44, 3, 1808);
+    			add_location(p21, file$r, 44, 0, 1805);
+    			add_location(strong7, file$r, 46, 2, 1856);
+    			add_location(p22, file$r, 45, 0, 1850);
+    			add_location(strong8, file$r, 49, 2, 1948);
+    			add_location(p23, file$r, 48, 0, 1942);
+    			add_location(strong9, file$r, 53, 2, 2091);
+    			add_location(p24, file$r, 52, 0, 2085);
     		},
 
     		l: function claim(nodes) {
@@ -7698,23 +7861,23 @@ var app = (function () {
     			}
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_fragment$q.name, type: "component", source: "", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_fragment$r.name, type: "component", source: "", ctx });
     	return block;
     }
 
     class Makosguba extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$q, safe_not_equal, []);
-    		dispatch_dev("SvelteRegisterComponent", { component: this, tagName: "Makosguba", options, id: create_fragment$q.name });
+    		init(this, options, null, create_fragment$r, safe_not_equal, []);
+    		dispatch_dev("SvelteRegisterComponent", { component: this, tagName: "Makosguba", options, id: create_fragment$r.name });
     	}
     }
 
     /* src/pages/central/HungarianPea.svelte generated by Svelte v3.12.1 */
 
-    const file$r = "src/pages/central/HungarianPea.svelte";
+    const file$s = "src/pages/central/HungarianPea.svelte";
 
-    function create_fragment$r(ctx) {
+    function create_fragment$s(ctx) {
     	var h1, t1, p0, t3, p1, t5, h20, strong0, t7, p2, strong1, t9, p3, t11, p4, t13, p5, t15, p6, t17, p7, t19, p8, t21, p9, t23, p10, t25, p11, t27, p12, t29, p13, t31, h21, t33, p14, strong2, t35, t36, p15, strong3, t38, t39, p16, strong4, t41, t42, p17, strong5, t44, t45, p18, strong6, t47, t48, p19, strong7, t50, t51, p20;
 
     	const block = {
@@ -7804,38 +7967,38 @@ var app = (function () {
     			t51 = space();
     			p20 = element("p");
     			p20.textContent = " ";
-    			add_location(h1, file$r, 0, 0, 0);
-    			add_location(p0, file$r, 1, 0, 28);
-    			add_location(p1, file$r, 8, 0, 428);
-    			add_location(strong0, file$r, 9, 4, 505);
-    			add_location(h20, file$r, 9, 0, 501);
-    			add_location(strong1, file$r, 10, 3, 543);
-    			add_location(p2, file$r, 10, 0, 540);
-    			add_location(p3, file$r, 11, 0, 577);
-    			add_location(p4, file$r, 12, 0, 613);
-    			add_location(p5, file$r, 13, 0, 632);
-    			add_location(p6, file$r, 14, 0, 684);
-    			add_location(p7, file$r, 15, 0, 716);
-    			add_location(p8, file$r, 16, 0, 733);
-    			add_location(p9, file$r, 17, 0, 765);
-    			add_location(p10, file$r, 18, 0, 800);
-    			add_location(p11, file$r, 19, 0, 826);
-    			add_location(p12, file$r, 20, 0, 871);
-    			add_location(p13, file$r, 21, 0, 886);
-    			add_location(h21, file$r, 22, 0, 920);
-    			add_location(strong2, file$r, 24, 2, 948);
-    			add_location(p14, file$r, 23, 0, 942);
-    			add_location(strong3, file$r, 27, 3, 1059);
-    			add_location(p15, file$r, 27, 0, 1056);
-    			add_location(strong4, file$r, 29, 2, 1129);
-    			add_location(p16, file$r, 28, 0, 1123);
-    			add_location(strong5, file$r, 35, 2, 1419);
-    			add_location(p17, file$r, 34, 0, 1413);
-    			add_location(strong6, file$r, 39, 2, 1559);
-    			add_location(p18, file$r, 38, 0, 1553);
-    			add_location(strong7, file$r, 44, 2, 1771);
-    			add_location(p19, file$r, 43, 0, 1765);
-    			add_location(p20, file$r, 47, 0, 1865);
+    			add_location(h1, file$s, 0, 0, 0);
+    			add_location(p0, file$s, 1, 0, 28);
+    			add_location(p1, file$s, 8, 0, 428);
+    			add_location(strong0, file$s, 9, 4, 505);
+    			add_location(h20, file$s, 9, 0, 501);
+    			add_location(strong1, file$s, 10, 3, 543);
+    			add_location(p2, file$s, 10, 0, 540);
+    			add_location(p3, file$s, 11, 0, 577);
+    			add_location(p4, file$s, 12, 0, 613);
+    			add_location(p5, file$s, 13, 0, 632);
+    			add_location(p6, file$s, 14, 0, 684);
+    			add_location(p7, file$s, 15, 0, 716);
+    			add_location(p8, file$s, 16, 0, 733);
+    			add_location(p9, file$s, 17, 0, 765);
+    			add_location(p10, file$s, 18, 0, 800);
+    			add_location(p11, file$s, 19, 0, 826);
+    			add_location(p12, file$s, 20, 0, 871);
+    			add_location(p13, file$s, 21, 0, 886);
+    			add_location(h21, file$s, 22, 0, 920);
+    			add_location(strong2, file$s, 24, 2, 948);
+    			add_location(p14, file$s, 23, 0, 942);
+    			add_location(strong3, file$s, 27, 3, 1059);
+    			add_location(p15, file$s, 27, 0, 1056);
+    			add_location(strong4, file$s, 29, 2, 1129);
+    			add_location(p16, file$s, 28, 0, 1123);
+    			add_location(strong5, file$s, 35, 2, 1419);
+    			add_location(p17, file$s, 34, 0, 1413);
+    			add_location(strong6, file$s, 39, 2, 1559);
+    			add_location(p18, file$s, 38, 0, 1553);
+    			add_location(strong7, file$s, 44, 2, 1771);
+    			add_location(p19, file$s, 43, 0, 1765);
+    			add_location(p20, file$s, 47, 0, 1865);
     		},
 
     		l: function claim(nodes) {
@@ -7962,23 +8125,23 @@ var app = (function () {
     			}
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_fragment$r.name, type: "component", source: "", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_fragment$s.name, type: "component", source: "", ctx });
     	return block;
     }
 
     class HungarianPea extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$r, safe_not_equal, []);
-    		dispatch_dev("SvelteRegisterComponent", { component: this, tagName: "HungarianPea", options, id: create_fragment$r.name });
+    		init(this, options, null, create_fragment$s, safe_not_equal, []);
+    		dispatch_dev("SvelteRegisterComponent", { component: this, tagName: "HungarianPea", options, id: create_fragment$s.name });
     	}
     }
 
     /* src/pages/other/Rye.svelte generated by Svelte v3.12.1 */
 
-    const file$s = "src/pages/other/Rye.svelte";
+    const file$t = "src/pages/other/Rye.svelte";
 
-    function create_fragment$s(ctx) {
+    function create_fragment$t(ctx) {
     	var h1, t1, p0, t3, p1, t5, h20, t7, p2, t9, p3, t11, p4, t13, p5, t15, p6, t17, p7, t19, h21, t21, p8, strong0, t23, t24, p9, strong1, t26, t27, p10, strong2, t29;
 
     	const block = {
@@ -8030,23 +8193,23 @@ var app = (function () {
     			strong2 = element("strong");
     			strong2.textContent = "Step 3:";
     			t29 = text(" Cook in a 375 degree oven for 1 hour");
-    			add_location(h1, file$s, 0, 0, 0);
-    			add_location(p0, file$s, 1, 0, 26);
-    			add_location(p1, file$s, 8, 0, 368);
-    			add_location(h20, file$s, 13, 0, 569);
-    			add_location(p2, file$s, 14, 0, 590);
-    			add_location(p3, file$s, 15, 0, 617);
-    			add_location(p4, file$s, 16, 0, 648);
-    			add_location(p5, file$s, 17, 0, 671);
-    			add_location(p6, file$s, 18, 0, 704);
-    			add_location(p7, file$s, 19, 0, 727);
-    			add_location(h21, file$s, 20, 0, 752);
-    			add_location(strong0, file$s, 22, 2, 780);
-    			add_location(p8, file$s, 21, 0, 774);
-    			add_location(strong1, file$s, 25, 3, 943);
-    			add_location(p9, file$s, 25, 0, 940);
-    			add_location(strong2, file$s, 26, 3, 1012);
-    			add_location(p10, file$s, 26, 0, 1009);
+    			add_location(h1, file$t, 0, 0, 0);
+    			add_location(p0, file$t, 1, 0, 26);
+    			add_location(p1, file$t, 8, 0, 368);
+    			add_location(h20, file$t, 13, 0, 569);
+    			add_location(p2, file$t, 14, 0, 590);
+    			add_location(p3, file$t, 15, 0, 617);
+    			add_location(p4, file$t, 16, 0, 648);
+    			add_location(p5, file$t, 17, 0, 671);
+    			add_location(p6, file$t, 18, 0, 704);
+    			add_location(p7, file$t, 19, 0, 727);
+    			add_location(h21, file$t, 20, 0, 752);
+    			add_location(strong0, file$t, 22, 2, 780);
+    			add_location(p8, file$t, 21, 0, 774);
+    			add_location(strong1, file$t, 25, 3, 943);
+    			add_location(p9, file$t, 25, 0, 940);
+    			add_location(strong2, file$t, 26, 3, 1012);
+    			add_location(p10, file$t, 26, 0, 1009);
     		},
 
     		l: function claim(nodes) {
@@ -8125,23 +8288,23 @@ var app = (function () {
     			}
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_fragment$s.name, type: "component", source: "", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_fragment$t.name, type: "component", source: "", ctx });
     	return block;
     }
 
     class Rye extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$s, safe_not_equal, []);
-    		dispatch_dev("SvelteRegisterComponent", { component: this, tagName: "Rye", options, id: create_fragment$s.name });
+    		init(this, options, null, create_fragment$t, safe_not_equal, []);
+    		dispatch_dev("SvelteRegisterComponent", { component: this, tagName: "Rye", options, id: create_fragment$t.name });
     	}
     }
 
     /* src/App.svelte generated by Svelte v3.12.1 */
 
-    const file$t = "src/App.svelte";
+    const file$u = "src/App.svelte";
 
-    function create_fragment$t(ctx) {
+    function create_fragment$u(ctx) {
     	var main, t, current_1;
 
     	var navbar = new Navbar({ $$inline: true });
@@ -8163,7 +8326,7 @@ var app = (function () {
     			t = space();
     			if (switch_instance) switch_instance.$$.fragment.c();
     			attr_dev(main, "class", "svelte-4kvi3v");
-    			add_location(main, file$t, 96, 0, 3659);
+    			add_location(main, file$u, 98, 0, 3773);
     		},
 
     		l: function claim(nodes) {
@@ -8230,7 +8393,7 @@ var app = (function () {
     			if (switch_instance) destroy_component(switch_instance);
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_fragment$t.name, type: "component", source: "", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_fragment$u.name, type: "component", source: "", ctx });
     	return block;
     }
 
@@ -8266,6 +8429,7 @@ var app = (function () {
       // french routes
       page("/roasted_carrots", () => ($$invalidate('current', current = RoastedCarrots)));
       page("/coq_au_vin", () => ($$invalidate('current', current = CoqAuVin)));
+      page("/roasted_eggplant", () => ($$invalidate('current', current = Eggplant)));
       page("/beef_bourguignon", () => ($$invalidate('current', current = BeefBourguignon)));
       page("/baguette", () => ($$invalidate('current', current = Baguette)));
       page("/french_onion_soup", () => ($$invalidate('current', current = FrenchOnion)));
@@ -8302,8 +8466,8 @@ var app = (function () {
     class App extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$2, create_fragment$t, safe_not_equal, []);
-    		dispatch_dev("SvelteRegisterComponent", { component: this, tagName: "App", options, id: create_fragment$t.name });
+    		init(this, options, instance$2, create_fragment$u, safe_not_equal, []);
+    		dispatch_dev("SvelteRegisterComponent", { component: this, tagName: "App", options, id: create_fragment$u.name });
     	}
     }
 

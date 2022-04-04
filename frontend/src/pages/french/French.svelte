@@ -15,6 +15,10 @@
         course
       </p>
     </li>
+    <li>
+      <a href="/roasted_eggplant">Roasted Eggplant (20 minutes) </a><br />
+      <p>A simple side dish, eggplant pairs well with any protein</p>
+    </li>
   </ul>
 </div>
 <div class="sections">
