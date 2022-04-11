@@ -36,6 +36,7 @@
   import FrenchOnion from "./pages/french/FrenchOnion.svelte";
   import PouletChasseur from "./pages/french/PouletChasseur.svelte";
   import Eggplant from "./pages/french/Eggplant.svelte";
+  import CotelettedePorc from "./pages/french/CotelettedePorc.svelte";
 
   // italian
   import HomemadePasta from "./pages/italian/HomemadePasta.svelte";
@@ -77,6 +78,7 @@
   page("/baguette", () => (current = Baguette));
   page("/french_onion_soup", () => (current = FrenchOnion));
   page("/poulet_chasseur", () => (current = PouletChasseur));
+  page("/cotelette_de_porc", () => (current = CotelettedePorc));
 
   // italian routes
   page("/homemade_pasta", () => (current = HomemadePasta));

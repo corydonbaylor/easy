@@ -39,5 +39,12 @@
       <a href="/beef_bourguignon">Beef Bourguignon (4-5 hours)</a><br />
       <p>Slow cooked beef served in a red wine, mushroom sauce</p>
     </li>
+    <li>
+      <a href="/cotelette_de_porc">Cotelette de Porc (20-30 minutes)</a><br />
+      <p>
+        From the Normandy region of France comes pork chop with a creamy apple
+        cider reduction sauce
+      </p>
+    </li>
   </ul>
 </div>
