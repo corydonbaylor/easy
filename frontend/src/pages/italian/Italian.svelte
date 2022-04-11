@@ -13,5 +13,13 @@
       <a href="/pesto">Walnut Pesto (15 minutes) </a><br />
       <p>Homemade walnut pesto, the perfect addition to homemade pasta</p>
     </li>
+    <li>
+      <a href="/ricotta_ravioli"
+        >Ricotta Ravioli with Sage Butter (1.5 hours)
+      </a><br />
+      <p>
+        Definitely a labor of love, homemade ravioli stuffed with nutmeg ricotta
+      </p>
+    </li>
   </ul>
 </div>
